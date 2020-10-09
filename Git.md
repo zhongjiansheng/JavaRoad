@@ -63,6 +63,54 @@ Git 常用命令包括：`git clone\git push\git add\git commit\git checkout\git
   > `git log --author=<name>`：查看某人的相关提交部分
 
   `git blame`：查看某个文件的制定修改记录
+  
+* 远程操作
+
+  `git remote`：远程仓库操作
+  
+  > `git remote -v`：显示所有远程仓库
+  >
+  > `git remote show [remote]`：显示某个远程仓库的信息
+  >
+  > `git remote add [shortname] [url]`：添加远程仓库
+  >
+  > `git remote rm <name>`：删除远程仓库
+  >
+  > `git remote rename old_name new_name`：修改仓库名
+  
+  `git fetch`：获取从远程获取代码库
+  
+  `git merge`：用于合并数据
+  
+  `git pull`：用于从远程获取代码并合并本地的版本
+  
+  > `git pull <远程主机名> <远程分支名>:<本地分支名>`
+  
+  `git push`：用于将本地的分支版本上传到远程并合并
+  
+  > `git push <远程主机名> <本地分支名>:<远程分支名>`：
+  >
+  > `git push --force origin  master`：如果版本有差异，通过添加*–force* 参数强制推送
+  > 
+## 三、分支管理
+
+分支管理常用的两个命令`git branch\git checkout`。
+
+* 创建分支
+
+  `git branch <branchname>`：创建分支
+
+  > `git branch -d (branchname)`：删除分支
+
+* 切换分支
+
+  `git checkout <branchname>`：切换分支名
+
+## 四、Git 标签
+
+标签常用的命令为` git tag`。相关指令为` git tag -a <tagname> -m <message>`。
+
+  
 
   
 
